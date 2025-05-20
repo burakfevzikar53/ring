@@ -1,0 +1,13 @@
+/* Collectible.css - Düşen nesneler için stiller */
+
+.collectible {
+    position: absolute;
+    width: 60px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.collectible:hover {
+    transform: scale(1.2) rotate(15deg);
+}

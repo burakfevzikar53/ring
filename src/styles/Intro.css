@@ -1,0 +1,96 @@
+/* src/styles/Intro.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #fbe6e6, #ffb6c1);
+    overflow: hidden;
+    animation: backgroundShift 10s linear infinite;
+    font-family: 'Playfair Display', serif;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    animation: slideIn 1s ease-out;
+}
+
+.character-image {
+    width: 200px;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.5s;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: #001f3f;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 8px 15px rgba(0, 31, 63, 0.4);
+    font-family: 'Playfair Display', serif;
+}
+
+button:hover {
+    background-color: #00122b;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.character-name {
+    color: #001f3f;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

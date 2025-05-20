@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import './styles/App.css';
+import './styles/Game.css';
+import Intro from './pages/Intro';
+import Game from './pages/Game';
+import Proposal from './pages/Proposal';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [stage, setStage] = useState('intro');
+
+    useEffect(() => {
+        // Oyun müziğini başlat
+        const backgroundMusic = new Audio('/assets/sounds/background-music.mp3');
+        backgroundMusic.loop = true;
+        backgroundMusic.volume = 0.4;
+        /* backgroundMusic.play(); */
+        return () => backgroundMusic.pause();
+    }, []);
+
+    const handleStartGame = () => setStage('game');
+    const handleShowProposal = () => setStage('proposal');
+    const handleRestartGame = () => setStage('intro');
+
+    return (
+        <div className="app-container">
+            {stage === 'intro' && <Intro onStart={handleStartGame} />}
+            {stage === 'game' && <Game onProposal={handleShowProposal} />}
+            {stage === 'proposal' && <Proposal onRestart={handleRestartGame} />}
+        </div>
+    );
 }
 
 export default App;

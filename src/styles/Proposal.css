@@ -1,0 +1,111 @@
+/* Proposal.css - Evlenme teklifi ekranı stilleri */
+
+.proposal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff8dc;
+    padding: 20px;
+    text-align: center;
+}
+
+.proposal-ring {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.proposal-text {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.language-selector-container {
+    position: relative;
+    margin-top: 15px;
+    width: 200px;
+}
+
+.language-selector {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1em;
+    border-radius: 30px;
+    border: 2px solid #001f3f;
+    cursor: pointer;
+    background-color: #001f3f;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.language-selector:hover {
+    background-color: #00122b;
+    border-color: #00122b;
+}
+
+.language-selector::after {
+    content: '▼';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    font-size: 0.8em;
+}
+
+.language-selector-container::after {
+    content: '▼';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.proposal-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.yes-button, .no-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+}
+
+.yes-button {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+.yes-button:hover {
+    background-color: #ff1493;
+}
+
+.no-button {
+    background-color: #ff6347;
+    color: #fff;
+    position: relative;
+}
+
+.no-button:hover {
+    background-color: #ff4500;
+    transform: scale(1.1);
+}

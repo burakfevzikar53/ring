@@ -1,0 +1,40 @@
+/* Game.css - Karakter kontrolü ve oyun ekranı stilleri */
+body {
+    overflow: hidden;
+    touch-action: manipulation;
+}
+.game-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #87CEFA;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.game-character {
+    position: absolute;
+    bottom: 10px;
+    width: 80px;
+    transition: left 0.2s ease;
+    z-index: 5;
+}
+
+.falling-item {
+    position: absolute;
+    will-change: transform;
+    z-index: 4;
+    width: 80px;
+    transition: transform 0.02s linear;
+}
