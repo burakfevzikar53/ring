@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ring/static/css/main.bc0afe89.css",
+    "main.js": "/ring/static/js/main.14a171f6.js",
+    "static/media/toplayıcı.png": "/ring/static/media/toplayıcı.a6c1c7ddf343220e029f.png",
+    "static/media/bfk-dialog.png": "/ring/static/media/bfk-dialog.a9d404b30d1f45775963.png",
+    "static/media/seher-dialog.png": "/ring/static/media/seher-dialog.65fb28e27aa11e049ce0.png",
+    "static/media/artı-puan.png": "/ring/static/media/artı-puan.c013dccd4e9b98dfd904.png",
+    "static/media/resim8.jpeg": "/ring/static/media/resim8.2300fe5e9aff70c575da.jpeg",
+    "static/media/resim9.jpeg": "/ring/static/media/resim9.8c92525c9fc3333cc5e1.jpeg",
+    "static/media/eksi-puan.png": "/ring/static/media/eksi-puan.a9c1f78488c3ce6a0368.png",
+    "static/media/resim1.jpeg": "/ring/static/media/resim1.f8bcc129657c1950e611.jpeg",
+    "static/media/artı2-puan.png": "/ring/static/media/artı2-puan.34e3f44486a485a3a8b2.png",
+    "static/media/resim2.jpeg": "/ring/static/media/resim2.866a73391ed0dd445d13.jpeg",
+    "static/media/resim3.jpeg": "/ring/static/media/resim3.d0a94e02dd9a2ae7a0b1.jpeg",
+    "static/media/resim7.jpeg": "/ring/static/media/resim7.10241d06b6b82532aa1a.jpeg",
+    "static/media/ring.png": "/ring/static/media/ring.09848139a46e3f075871.png",
+    "index.html": "/ring/index.html",
+    "main.bc0afe89.css.map": "/ring/static/css/main.bc0afe89.css.map",
+    "main.14a171f6.js.map": "/ring/static/js/main.14a171f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc0afe89.css",
+    "static/js/main.14a171f6.js"
+  ]
+}
