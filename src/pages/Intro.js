@@ -4,7 +4,7 @@ import DialogBox from '../components/DialogBox';
 import '../styles/Intro.css';
 import characterImage from '../assets/images/bfk-dialog.png';
 import partnerImage from '../assets/images/seher-dialog.png';
-import later from '../assets/images/resim9.jpeg';
+//import later from '../assets/images/resim9.jpeg';
 
 const dialogs = [
     { character: 'BFK', image: characterImage, text: 'Merhaba 🤩, aramıza hoş geldin! İlk günler biraz zor olabilir ama alışmana yardımcı olmak için buradayım.' },
