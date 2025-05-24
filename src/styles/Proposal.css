@@ -109,3 +109,23 @@
     background-color: #ff4500;
     transform: scale(1.1);
 }
+
+.slideshow-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.slideshow-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+}
